@@ -32,8 +32,11 @@ $months = 11;
 $days = $months * 16;
 $days_per_language = $days / $num_language;
 echo $days_per_language;
-echo "\n";
+echo "\n\n";
 
+
+//12
+echo 8**2;
 
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
