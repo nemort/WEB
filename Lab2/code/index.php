@@ -49,6 +49,91 @@ $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
 echo $answer;
+echo "\n\n";
+
+
+//14
+$a=10;
+$b=3;
+echo $a % $b, "\n";
+
+if ($a % $b == 0) {
+    echo "Делится\n";
+    echo "Результат деления:", $a / $b;
+}
+else {
+    echo "Делится с остатком.\n";
+    echo "Остаток от деления: ", $a % $b;
+}
+echo "\n";
+
+$st = pow(2, 10);
+echo sqrt(245), "\n";
+
+$a = array(4, 2, 5, 19, 13, 0, 10);
+$count = 0;
+foreach($a as $element) {
+    $count += pow($element, 2);
+}
+echo $count, "\n";
+
+echo round(sqrt(379)), "\n";
+echo round(sqrt(379), 1), "\n";
+echo round(sqrt(379), 2), "\n";
+
+$a = array('floor' => floor(sqrt(587)), 'ceil' => ceil(sqrt(587)));
+print_r($a);
+echo "\n";
+
+$a = array(4, -2, 5, 19, -130, 0, 10);
+echo min($a);
+echo "\n";
+echo max($a);
+echo "\n";
+
+echo rand(1, 100), "\n";
+
+
+$a = array();
+for ($i = 0; $i < 10; $i++) {
+    $array[$i] = rand();
+}
+print_r($array);
+echo "\n";
+
+$a = 9;
+$b = 10;
+echo abs($a - $b), "\n";
+
+$a = array(1, 2, -1, -2, 3, -3);
+$b = array();
+for ($i = 0; $i<sizeof($a); $i++) {
+    $b[$i] = abs($a[$i]);
+}
+print_r($b);
+echo "\n";
+
+$a = 30;
+$b = array();
+for ($i = 1; $i <= $a; $i++) {
+    if ($a % $i === 0) {
+        $b[] = $i;
+    }
+}
+print_r($b);
+
+$nums = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+$count = 0;
+$k = 0;
+for ($i = 0; $i <= sizeof($nums); $i++) {
+    $count += $nums[$i];
+    $k += 1;
+    if ($count > 10){
+        echo $k;
+        break;
+    }
+}
+
 
 
 // Don't change the line below
