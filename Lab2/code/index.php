@@ -192,6 +192,68 @@ $num = 20289374502234;
 echo "Однозначное число: ", summ($num);
 
 
+//17
+echo "\n";
+function arrayX(int $len){
+    for ($i = 1; $i <= $len; $i++){
+        $array[$i] = str_repeat("x",$i) ;
+    }
+    return $array;
+}
+print_r(arrayX(3));
+
+
+function arrayFill($x, int $len){
+    for ($i = 0; $i <= $len; $i++){
+        $array[$i] = $x;
+    }
+    return $array;
+}
+print_r(arrayFill("*",4));
+
+
+function sumArrays($array) {
+    $count = 0;
+    foreach ($array as $i) {
+        foreach ($i as $j) {
+            $count += $j;
+        }
+    }
+    return $count;
+}
+$array = [[1, 2, 3], [4, 5], [6]];
+echo sumArrays($array), "\n";
+
+
+$num = 1;
+$array = array();
+for ($i = 0; $i < 3; $i++) {
+    $internalArray = array();
+
+    for ($j = 0; $j < 3; $j++) {
+        $internalArray[] = $num;
+        $num++;
+    }
+    $array[] = $internalArray;
+}
+print_r($array);
+
+
+$nums = array(2, 5, 3, 9);
+$result = $nums[0]*$nums[1]+$nums[2]*$nums[3];
+echo $result, "\n";
+
+$user = array('name' => "Романов", 'surname' => "Илья", 'patronymic' => "Андреевич");
+echo "ФИО: ", $user['name']," ", $user['surname']," ", $user['patronymic'], "\n";
+
+$date = array('year' => 2024, 'month' => "03", 'day' => "10");
+echo "Дата: ", $date['year'],"-",$date['month'],"-",$date['day'], "\n";
+
+$arr = array('a','b','c','d','e');
+echo sizeof($arr), "\n";
+$len = count($arr);
+echo $arr[$len-1]."\n".$arr[$len-2]."\n";
+
 
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
