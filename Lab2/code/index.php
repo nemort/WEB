@@ -142,9 +142,54 @@ function printStringReturnNumber() {
 }
 $my_num = printStringReturnNumber();
 echo $my_num;
+echo "\n\n";
+
+
+//16
+function increaseEnthusiasm(string $str){
+    return $str."!";
+}
+echo increaseEnthusiasm("Hello, world"), "\n";
+
+
+function repeatThreeTimes(string $str){
+    return $str.$str.$str;
+}
+echo repeatThreeTimes("I love pizza "), "\n";
+echo increaseEnthusiasm(repeatThreeTimes("Hi")), "\n";
+
+
+function cut(string $str, int $i = 10){
+    return substr($str,0, $i);
+}
+echo cut("01234567891011121314151617181920");
 echo "\n";
 
 
+function recursion($a, $i = 0){
+    if ($i<sizeof($a)){
+        echo $a[$i] . "\n";
+        recursion($a, $i + 1);
+    }
+}
+echo "\n";
+$a = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+recursion($a);
+
+
+function summ($num) {
+    $count = 0;
+    while($num > 0){
+        $count += $num % 10;
+        $num = (int)($num / 10);
+    }
+    if ($count > 9){
+        return summ($count);
+    }
+    return $count;
+}
+$num = 20289374502234;
+echo "Однозначное число: ", summ($num);
 
 
 
