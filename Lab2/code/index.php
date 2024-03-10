@@ -310,6 +310,32 @@ for ($i = 1; $i <= 20; $i++) {
     }
     echo "\n";
 }
+echo "\n\n";
+
+
+//20
+$nums = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
+$average = array_sum($nums) / sizeof($nums);
+echo $average, "\n";
+
+$a = 1;
+$b = 100;
+$sum = ($a * ($b + 1)) / 2;
+echo $sum, "\n";
+
+$nums = array(52, 54, 228, 1480, 1, 2, 3, 4, 5, 6);
+$nums = array_map("sqrt", $nums);
+print_r($nums);
+
+$nums = range(1, 26);
+$letters = range('a', 'z');
+print_r(array_combine($letters, $nums));
+
+$str = '1234567890';
+$pairs = str_split($str, 2);
+$array = array_map("intval",$pairs);
+$sum = array_sum($array);
+echo $sum, "\n\n";
 
 
 // Don't change the line below
