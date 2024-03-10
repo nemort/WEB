@@ -252,7 +252,54 @@ echo "Дата: ", $date['year'],"-",$date['month'],"-",$date['day'], "\n";
 $arr = array('a','b','c','d','e');
 echo sizeof($arr), "\n";
 $len = count($arr);
-echo $arr[$len-1]."\n".$arr[$len-2]."\n";
+echo $arr[$len-1]."\n".$arr[$len-2]."\n\n";
+
+
+//18
+function sumTwo(int $a, int $b){
+    if (($a + $b) > 10) {
+        return True;
+    }
+    else{
+        return False;
+    }
+}
+echo sumTwo(10, 1), "\n";
+
+
+function isEqual(int $a, int $b){
+    if ($a == $b){
+        return True;
+    }
+    else{
+        return False;
+    }
+}
+echo isEqual(52, 52), "\n";
+
+$test = 0;
+echo $test == 0 ? 'верно' : '';
+echo "\n";
+
+$age = 52;
+if ($age < 10 || $age > 99) {
+    echo "$age не попадает в диапазон [10, 99]\n";
+}
+else {
+    $sum = array_sum(str_split($age));
+    if ($sum <= 9) {
+        echo "Сумма цифр однозначна";
+    } else {
+        echo "Сумма цифр двузначна";
+    }
+}
+echo "\n";
+
+$arr = array(1,2,3);
+if (sizeof($arr) == 3) {
+    $sum = array_sum($arr);
+    echo $sum;
+}
 
 
 // Don't change the line below
