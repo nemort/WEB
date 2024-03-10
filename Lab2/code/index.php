@@ -133,6 +133,18 @@ for ($i = 0; $i <= sizeof($nums); $i++) {
         break;
     }
 }
+echo "\n\n";
+
+
+//15
+function printStringReturnNumber() {
+    return 52;
+}
+$my_num = printStringReturnNumber();
+echo $my_num;
+echo "\n";
+
+
 
 
 
