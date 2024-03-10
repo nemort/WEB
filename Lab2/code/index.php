@@ -302,5 +302,15 @@ if (sizeof($arr) == 3) {
 }
 
 
+//19
+echo "\n";
+for ($i = 1; $i <= 20; $i++) {
+    for ($j = 1; $j <= $i; $j++) {
+        echo 'x';
+    }
+    echo "\n";
+}
+
+
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
