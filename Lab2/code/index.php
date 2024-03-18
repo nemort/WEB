@@ -18,7 +18,7 @@ $cost = 10.9;
 echo "$cost";
 echo "\n";
 
-echo 1+1+1+1+1+1+1+1+1+1+1+1;
+echo 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1;
 echo "\n";
 
 $lastMonth = 1187.23;
@@ -94,7 +94,7 @@ echo "\n";
 echo rand(1, 100), "\n";
 
 
-$a = array();
+$a = [];
 for ($i = 0; $i < 10; $i++) {
     $array[$i] = rand();
 }
@@ -106,7 +106,7 @@ $b = 10;
 echo abs($a - $b), "\n";
 
 $a = array(1, 2, -1, -2, 3, -3);
-$b = array();
+$b = [];
 for ($i = 0; $i<sizeof($a); $i++) {
     $b[$i] = abs($a[$i]);
 }
@@ -114,7 +114,7 @@ print_r($b);
 echo "\n";
 
 $a = 30;
-$b = array();
+$b = [];
 for ($i = 1; $i <= $a; $i++) {
     if ($a % $i === 0) {
         $b[] = $i;
@@ -226,9 +226,9 @@ echo sumArrays($array), "\n";
 
 
 $num = 1;
-$array = array();
+$array = [];
 for ($i = 0; $i < 3; $i++) {
-    $internalArray = array();
+    $internalArray = [];
 
     for ($j = 0; $j < 3; $j++) {
         $internalArray[] = $num;
@@ -240,7 +240,7 @@ print_r($array);
 
 
 $nums = array(2, 5, 3, 9);
-$result = $nums[0]*$nums[1]+$nums[2]*$nums[3];
+$result = $nums[0] * $nums[1] + $nums[2] * $nums[3];
 echo $result, "\n";
 
 $user = array('name' => "Романов", 'surname' => "Илья", 'patronymic' => "Андреевич");
@@ -252,7 +252,7 @@ echo "Дата: ", $date['year'],"-",$date['month'],"-",$date['day'], "\n";
 $arr = array('a','b','c','d','e');
 echo sizeof($arr), "\n";
 $len = count($arr);
-echo $arr[$len-1]."\n".$arr[$len-2]."\n\n";
+echo $arr[$len - 1]."\n".$arr[$len - 2]."\n\n";
 
 
 //18
