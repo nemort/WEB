@@ -70,7 +70,7 @@ echo "\n";
 $st = pow(2, 10);
 echo sqrt(245), "\n";
 
-$a = array(4, 2, 5, 19, 13, 0, 10);
+$a = [4, 2, 5, 19, 13, 0, 10];
 $count = 0;
 foreach($a as $element) {
     $count += pow($element, 2);
@@ -81,11 +81,11 @@ echo round(sqrt(379)), "\n";
 echo round(sqrt(379), 1), "\n";
 echo round(sqrt(379), 2), "\n";
 
-$a = array('floor' => floor(sqrt(587)), 'ceil' => ceil(sqrt(587)));
+$a = ['floor' => floor(sqrt(587)), 'ceil' => ceil(sqrt(587))];
 print_r($a);
 echo "\n";
 
-$a = array(4, -2, 5, 19, -130, 0, 10);
+$a = [4, -2, 5, 19, -130, 0, 10];
 echo min($a);
 echo "\n";
 echo max($a);
@@ -105,7 +105,7 @@ $a = 9;
 $b = 10;
 echo abs($a - $b), "\n";
 
-$a = array(1, 2, -1, -2, 3, -3);
+$a = [1, 2, -1, -2, 3, -3];
 $b = [];
 for ($i = 0; $i<sizeof($a); $i++) {
     $b[$i] = abs($a[$i]);
@@ -122,7 +122,7 @@ for ($i = 1; $i <= $a; $i++) {
 }
 print_r($b);
 
-$nums = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+$nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $count = 0;
 $k = 0;
 for ($i = 0; $i <= sizeof($nums); $i++) {
@@ -173,7 +173,7 @@ function recursion($a, $i = 0){
     }
 }
 echo "\n";
-$a = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+$a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 recursion($a);
 
 
@@ -239,17 +239,17 @@ for ($i = 0; $i < 3; $i++) {
 print_r($array);
 
 
-$nums = array(2, 5, 3, 9);
+$nums = [2, 5, 3, 9];
 $result = $nums[0] * $nums[1] + $nums[2] * $nums[3];
 echo $result, "\n";
 
-$user = array('name' => "Романов", 'surname' => "Илья", 'patronymic' => "Андреевич");
+$user = ['name' => "Романов", 'surname' => "Илья", 'patronymic' => "Андреевич"];
 echo "ФИО: ", $user['name']," ", $user['surname']," ", $user['patronymic'], "\n";
 
-$date = array('year' => 2024, 'month' => "03", 'day' => "10");
+$date = ['year' => 2024, 'month' => "03", 'day' => "10"];
 echo "Дата: ", $date['year'],"-",$date['month'],"-",$date['day'], "\n";
 
-$arr = array('a','b','c','d','e');
+$arr = ['a','b','c','d','e'];
 echo sizeof($arr), "\n";
 $len = count($arr);
 echo $arr[$len - 1]."\n".$arr[$len - 2]."\n\n";
@@ -295,7 +295,7 @@ else {
 }
 echo "\n";
 
-$arr = array(1,2,3);
+$arr = [1,2,3];
 if (sizeof($arr) == 3) {
     $sum = array_sum($arr);
     echo $sum;
@@ -314,7 +314,7 @@ echo "\n\n";
 
 
 //20
-$nums = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
+$nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 $average = array_sum($nums) / sizeof($nums);
 echo $average, "\n";
 
@@ -323,7 +323,7 @@ $b = 100;
 $sum = ($a * ($b + 1)) / 2;
 echo $sum, "\n";
 
-$nums = array(52, 54, 228, 1480, 1, 2, 3, 4, 5, 6);
+$nums = [52, 54, 228, 1480, 1, 2, 3, 4, 5, 6];
 $nums = array_map("sqrt", $nums);
 print_r($nums);
 
